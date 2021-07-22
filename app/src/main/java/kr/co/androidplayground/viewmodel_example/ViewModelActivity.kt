@@ -17,6 +17,8 @@ class ViewModelActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         val model: SampleViewModel by viewModels()
+        binding.lifecycleOwner = this
+        binding.model = model
 
         binding.button.setOnClickListener {
             model.count.value?.let {

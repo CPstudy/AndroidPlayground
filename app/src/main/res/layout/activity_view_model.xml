@@ -5,7 +5,7 @@
 
     <data>
         <variable
-            name="viewmodel"
+            name="model"
             type="kr.co.androidplayground.viewmodel_example.SampleViewModel" />
     </data>
 
@@ -18,7 +18,7 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{Integer.toString(viewmodel.count.intValue())}"
+            android:text="@{Integer.toString(model.count.intValue())}"
             android:textSize="34sp"
             app:layout_constraintBottom_toTopOf="@+id/button"
             app:layout_constraintEnd_toEndOf="parent"
