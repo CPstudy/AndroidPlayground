@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import kr.co.androidplayground.bitmapcombine.BitmapCombineActivity
 import kr.co.androidplayground.viewmodel_example.ViewModelActivity
 
 class MainAdapter(private val list: Array<String>) :
@@ -20,6 +21,7 @@ class MainAdapter(private val list: Array<String>) :
             itemView.setOnClickListener {
                 when (text) {
                     "ViewModel" -> Intent(it.context, ViewModelActivity::class.java).also { intent -> it.context.startActivity(intent) }
+                    "BitmapCombine" -> Intent(it.context, BitmapCombineActivity::class.java).also { intent -> it.context.startActivity(intent) }
                 }
             }
         }
